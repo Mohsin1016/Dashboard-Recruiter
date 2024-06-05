@@ -1,0 +1,215 @@
+@import url("https://fonts.googleapis.com/css2?family=Barlow:wght@400;500;600&family=DM+Sans:wght@400;500;700&family=Montserrat:wght@300;400;500&family=Mulish:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap");
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.shadow-form {
+  box-shadow: 0px 4px 35px rgba(0, 0, 0, 0.12);
+}
+
+/* .ant-menu-item {
+  width: 100% !important;
+  margin: auto !important;
+  border-radius: 0 !important;
+} */
+/* .ant-menu-item{
+  color: black ;
+} */
+.ant-table-column-sorter {
+  display: none !important;
+}
+
+/* #newOrders .ant-table-tbody tr {
+  background-color: #fc8383;
+  border-radius: 50px !important;
+  padding: 10px !important;
+  margin-top: 50px !important;
+} */
+.ant-table-thead tr th {
+  background-color: #fafbff !important;
+  border-right: none !important;
+}
+
+table {
+  background-color: #fafbff;
+}
+
+
+.ant-table-thead tr th::before {
+  background-color: transparent !important;
+}
+
+.ant-menu-item:not(:first-child) {
+  margin-top: 0.5rem !important;
+}
+
+.ant-menu-item.ant-menu-item-selected {
+  background-color: #2668E8 !important;
+  color: white;
+}
+
+.ant-layout-sider-trigger {
+  background-color: #2668E8 !important;
+  color: white;
+}
+
+/* .ant-layout-sider,
+.ant-menu {
+  background-color: white !important;
+}
+
+.ant-layout-header {
+  background-color: white !important;
+} */
+.small-arrow-icon {
+  font-size: 10px;
+  text-shadow: 0px 0px 1px rgba(0, 0, 0, 0.8);
+  /* Adjust the font weight as needed */
+}
+
+.ant-layout-sider {
+  box-shadow: 4px 11px 12px rgba(205, 205, 205, 0.12) !important;
+}
+
+.sidebar {
+  overflow-y: auto;
+  max-height: 80vh !important;
+  /* padding-bottom: 1rem !important; */
+}
+
+::-webkit-scrollbar {
+  width: 0.5em;
+  height: 0.5em;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px !important;
+  background-color: #2668E8 !important;
+}
+
+.main-content::-webkit-scrollbar-track {
+  background: white !important;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: white;
+}
+
+.sidebar::-webkit-scrollbar {
+  display: none;
+}
+
+.sidebar:hover::-webkit-scrollbar {
+  /* overflow: scroll; */
+  display: block;
+  width: 6px;
+}
+
+.ant-layout-sider-collapsed .user {
+  display: none !important;
+}
+
+.tableWrapper {
+  display: flex;
+  flex-flow: column;
+  gap: 5px;
+  width: 100%;
+  height: 100%;
+  background: #ffffff;
+  box-shadow: 2px 4px 24px rgba(0, 0, 0, 0.12);
+  border-radius: 10px;
+  padding: 20px;
+  margin-top: 10px;
+}
+
+.btn-primary {
+  background: #2668E8 !important;
+  font-family: "Poppins";
+}
+
+.tableWrapper .ant-table-thead tr th {
+  background-color: white !important;
+  border-right: none !important;
+}
+
+.tableWrapper table {
+  background-color: white;
+}
+
+.ant-popconfirm-buttons {
+  display: none !important;
+}
+
+.ant-dropdown-menu-item-active {
+  background: none !important;
+}
+
+/* ========================================================== */
+.switch {
+  position: relative;
+  display: inline-block;
+  width: 30px;
+  height: 20px;
+}
+
+/* Hide default HTML checkbox */
+.switch input {
+  opacity: 0;
+  width: 0;
+  height: 0;
+}
+
+/* The slider */
+.slider {
+  position: absolute;
+  cursor: pointer;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: white;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+.slider:before {
+  position: absolute;
+  content: "";
+  height: 10px;
+  width: 10px;
+  left: 4px;
+  bottom: 4px;
+  background-color: #F05519;
+  -webkit-transition: .4s;
+  transition: .4s;
+}
+
+/* input:checked + .slider {
+  background-color: #2196F3;
+}
+
+input:focus + .slider {
+  box-shadow: 0 0 1px #2196F3;
+} */
+
+input:checked+.slider:before {
+  -webkit-transform: translateX(15px);
+  -ms-transform: translateX(15px);
+  transform: translateX(15px);
+}
+
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+}
+
+.slider.round:before {
+  border-radius: 50%;
+}
+
+/* for disabled rows of table */
+.disabledRow {
+  background-color: #f0f0f0;
+  opacity: 0.5;
+}

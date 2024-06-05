@@ -1,0 +1,37 @@
+{
+  "name": "dashboard",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.11.1",
+    "@emotion/styled": "^11.11.0",
+    "@fortawesome/fontawesome-svg-core": "^6.4.2",
+    "@mui/material": "^5.14.3",
+    "@mui/styled-engine-sc": "^5.12.0",
+    "@tanstack/match-sorter-utils": "^8.8.4",
+    "@tanstack/react-query": "^4.29.11",
+    "@tanstack/react-query-devtools": "^4.33.0",
+    "antd": "^5.5.1",
+    "autoprefixer": "10.4.14",
+    "axios": "^1.5.0",
+    "firebase": "^9.22.1",
+    "next": "13.4.4",
+    "postcss": "8.4.24",
+    "protobufjs": "^7.2.5",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-icons": "^4.10.1",
+    "styled-components": "^5.3.11",
+    "tailwindcss": "3.3.2",
+    "uuidv4": "^6.2.13"
+  },
+  "devDependencies": {
+    "babel-plugin-import": "^1.13.6"
+  }
+}
